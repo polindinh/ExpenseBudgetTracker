@@ -77987,7 +77987,10 @@ var render = function() {
       { staticClass: "menu-link" },
       [
         _c("router-link", { attrs: { to: { name: "dashboard" } } }, [
-          _c("i", { staticClass: "fa fa-tachometer" }),
+          _c("i", {
+            staticClass: "fas fa-tachometer-alt blue fa-lg",
+            staticStyle: { color: "yellow" }
+          }),
           _vm._v("Dashboard")
         ])
       ],
@@ -77999,7 +78002,10 @@ var render = function() {
       { staticClass: "menu-link" },
       [
         _c("router-link", { attrs: { to: { name: "transactions" } } }, [
-          _c("i", { staticClass: "fa fa-bank" }),
+          _c("i", {
+            staticClass: "fas fa-money-check-alt fa-lg",
+            staticStyle: { color: "#85BB65" }
+          }),
           _vm._v("Transaction")
         ])
       ],
@@ -78011,7 +78017,10 @@ var render = function() {
       { staticClass: "menu-link" },
       [
         _c("router-link", { attrs: { to: { name: "budgets" } } }, [
-          _c("i", { staticClass: "fa fa-balance-scale" }),
+          _c("i", {
+            staticClass: "fas fa-piggy-bank fa-lg",
+            staticStyle: { color: "#FABFB7" }
+          }),
           _vm._v("Budgets")
         ])
       ],
@@ -78023,7 +78032,10 @@ var render = function() {
       { staticClass: "menu-link" },
       [
         _c("router-link", { attrs: { to: { name: "stats" } } }, [
-          _c("i", { staticClass: "fa fa-line-chart" }),
+          _c("i", {
+            staticClass: "fas fa-project-diagram fa-lg",
+            staticStyle: { color: "#F5F2B8" }
+          }),
           _vm._v("Stats")
         ])
       ],
@@ -78037,7 +78049,10 @@ var render = function() {
       { staticClass: "menu-link" },
       [
         _c("router-link", { attrs: { to: { name: "my-account" } } }, [
-          _c("i", { staticClass: "fa fa-tachometer" }),
+          _c("i", {
+            staticClass: "fas fa-cogs fa-lg",
+            staticStyle: { color: "whitesmoke" }
+          }),
           _vm._v("Account Setting")
         ])
       ],
@@ -78054,7 +78069,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", { staticClass: "menu-link" }, [
       _c("a", { attrs: { href: "/sign_out" } }, [
-        _c("i", { staticClass: "fa fa-sign-out" }),
+        _c("i", {
+          staticClass: "fa fa-power-off fa-lg",
+          staticStyle: { color: "red" }
+        }),
         _vm._v(" Sign Out")
       ])
     ])
@@ -95773,6 +95791,9 @@ window.Jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jq
  // If you don't need the styles, do not connect
 
 
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.filter('upText', function (text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+});
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_sweetalert2__WEBPACK_IMPORTED_MODULE_4__["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
@@ -97805,8 +97826,8 @@ var actions = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/logical/Desktop/CurrentProject/budget/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/logical/Desktop/CurrentProject/budget/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /projects/ExpenseBudgetTracker/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /projects/ExpenseBudgetTracker/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
