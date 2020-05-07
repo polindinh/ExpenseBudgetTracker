@@ -9,8 +9,8 @@
                         <div class="info-content">
                             <div class="price-monitor flex ai-center jc-flex-start">
                                 <h2 class="fw-semibold">{{currencyDisplay.symbol}}{{todaySpent}}</h2>
-                                <i v-if="dayDifferent.status=='more'" class="text-danger fa fa-long-arrow-up"></i>
-                                <i v-if="dayDifferent.status=='less'" class="text-success fa fa-long-arrow-down"></i>
+                                <i v-if="dayDifferent.status=='more'" class="text-danger fas fa-long-arrow-alt-up"></i>
+                                <i v-if="dayDifferent.status=='less'" class="text-success fas fa-long-arrow-alt-down"></i>
                             </div>
                             <p class="has-text-grey">That's {{currencyDisplay.symbol}}{{dayDifferent.amount}} <strong>{{dayDifferent.status}}</strong> than yesterday</p></div>
                     </div>

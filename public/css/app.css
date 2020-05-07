@@ -10464,7 +10464,7 @@ a {
 }
 
 .menu-list a.router-link-exact-active {
-    background: rgba(0, 0, 0, .1);
+    background: rgb(81,81,223);
     color: #fff;
     border-left: 3px solid #2962ff
 }
@@ -11063,7 +11063,8 @@ p.help.is-danger {
 
 .brand-text .suffix {
     display: inline-block;
-    background: #2962ff;
+    /* background: #2962ff; */
+    background:red;
     color: #fff;
     font-size: .92rem;
     text-transform: uppercase;

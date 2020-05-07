@@ -17,10 +17,15 @@
     <header class="header-main flex ai-center">
         <nav class="nav-main">
             <div class="flex ai-center">
-                <div class="logo">{{env('MIX_APP_NAME')}}{{env('MIX_APP_SUFFIX')}}</div>
+            <aside class="is-hidden-mobile menu pos-fixed zi-99 h-100vh">
+            <div class="logo ta-center ptb-4"><a href="/" class="brand-text">{{env('MIX_APP_NAME')}}.{{env('MIX_APP_SUFFIX')}}</a>
+            </div>
+            <menus></menus>
+        </aside>
+                <!-- <div class="logo">{{env('MIX_APP_NAME')}}{{env('MIX_APP_SUFFIX')}}</div>
                 <ul>
                     <li><a href="#features" class="animate-link">Features</a></li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
         <div class="nav-buttons text-right">

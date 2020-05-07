@@ -77589,16 +77589,7 @@ var render = function() {
     _c(
       "aside",
       { staticClass: "is-hidden-mobile menu pos-fixed zi-99 h-100vh" },
-      [
-        _c("div", { staticClass: "logo ta-center ptb-4" }, [
-          _c("a", { staticClass: "brand-text", attrs: { href: "/" } }, [
-            _vm._v(_vm._s(_vm.appName)),
-            _c("span", { staticClass: "suffix" }, [_vm._v(_vm._s(_vm.suffix))])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("menus")
-      ],
+      [_vm._m(0), _vm._v(" "), _c("menus")],
       1
     ),
     _vm._v(" "),
@@ -77613,12 +77604,7 @@ var render = function() {
               "logo ta-left ptb-4 plr-4 flex ai-center jc-space-between"
           },
           [
-            _c("a", { staticClass: "block brand-text", attrs: { href: "/" } }, [
-              _vm._v(_vm._s(_vm.appName) + "\n                "),
-              _c("span", { staticClass: "suffix" }, [
-                _vm._v(_vm._s(_vm.suffix))
-              ])
-            ]),
+            _vm._m(1),
             _vm._v(" "),
             _c(
               "a",
@@ -77648,7 +77634,28 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo ta-center ptb-4" }, [
+      _c("a", { staticClass: "brand-text", attrs: { href: "/" } }, [
+        _vm._v("Expense"),
+        _c("span", { staticClass: "suffix" }, [_vm._v("Tracker")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { staticClass: "block brand-text", attrs: { href: "/" } }, [
+      _vm._v("Expense\n                "),
+      _c("span", { staticClass: "suffix" }, [_vm._v("Tracker")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -78741,13 +78748,13 @@ var render = function() {
                   _vm._v(" "),
                   _vm.dayDifferent.status == "more"
                     ? _c("i", {
-                        staticClass: "text-danger fa fa-long-arrow-up"
+                        staticClass: "text-danger fas fa-long-arrow-alt-up"
                       })
                     : _vm._e(),
                   _vm._v(" "),
                   _vm.dayDifferent.status == "less"
                     ? _c("i", {
-                        staticClass: "text-success fa fa-long-arrow-down"
+                        staticClass: "text-success fas fa-long-arrow-alt-down"
                       })
                     : _vm._e()
                 ]

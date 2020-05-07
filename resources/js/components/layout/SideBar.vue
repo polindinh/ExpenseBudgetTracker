@@ -1,14 +1,14 @@
 <template>
     <div>
         <aside class="is-hidden-mobile menu pos-fixed zi-99 h-100vh">
-            <div class="logo ta-center ptb-4"><a href="/" class="brand-text">{{appName}}<span class="suffix">{{suffix}}</span></a>
+            <div class="logo ta-center ptb-4"><a href="/" class="brand-text">Expense<span class="suffix">Tracker</span></a>
             </div>
             <menus></menus>
         </aside>
         <aside class="is-hidden-tablet menu-mobile pos-fixed zi-99">
             <div class="logo ta-left ptb-4 plr-4 flex ai-center jc-space-between">
-                <a href="/" class="block brand-text">{{appName}}
-                    <span class="suffix">{{suffix}}</span>
+                <a href="/" class="block brand-text">Expense
+                    <span class="suffix">Tracker</span>
                 </a>
                 <a href="#" @click="mobile==true?mobile=false:mobile=true" class="block fs-5 mobile-menu-trigger">
                     <i v-if="mobile" class="fa fa-times"></i>
