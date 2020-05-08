@@ -10464,7 +10464,7 @@ a {
 }
 
 .menu-list a.router-link-exact-active {
-    background: rgb(81,81,223);
+    background: #2962FF;
     color: #fff;
     border-left: 3px solid #2962ff
 }
