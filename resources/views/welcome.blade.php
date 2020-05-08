@@ -8,6 +8,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
@@ -17,15 +18,8 @@
     <header class="header-main flex ai-center">
         <nav class="nav-main">
             <div class="flex ai-center">
-            <aside class="is-hidden-mobile menu pos-fixed zi-99 h-100vh">
-            <div class="logo ta-center ptb-4"><a href="/" class="brand-text">{{env('MIX_APP_NAME')}}.{{env('MIX_APP_SUFFIX')}}</a>
-            </div>
-            <menus></menus>
-        </aside>
-                <!-- <div class="logo">{{env('MIX_APP_NAME')}}{{env('MIX_APP_SUFFIX')}}</div>
-                <ul>
-                    <li><a href="#features" class="animate-link">Features</a></li>
-                </ul> -->
+                <div class="logo ta-center ptb-4" ><a href="/" class="brand-text" style="color:blue;">Expense<p class="suffix" style="display:inline;">Tracker</p></a>
+                </div>
             </div>
         </nav>
         <div class="nav-buttons text-right">
@@ -39,10 +33,10 @@
         <div class="intro flex">
             <div class="flex flex-1 ai-center">
                 <div class="intro-text">
-                    <h1 class="heading-primary">Control your spending.</h1>
+                    <h1 class="heading-primary">Control your budgets and expenses.</h1>
                     <p class="description">With a manual-only entry mode, create customizable budgets and build better
                         money management habits.</p>
-                    <a href="/signup" class="button button-primary">Sign Up For Free</a>
+                    <a href="/signup" class="button button-primary" style="padding: .75rem 0.75rem;">Sign Up For Free</a>
                 </div>
             </div>
             <div class="flex-2 text-right">
@@ -57,80 +51,27 @@
             <div class="text-center">
                 <h2 class="heading-secondary">What can it do?</h2>
             </div>
-            <div class="features-list flex jc-space-between">
-                <a href="#" class="feature" id="featureBudgets">Manage Budgets</a>
-                <a href="#" class="feature" id="featureSpending">Track Spending</a>
-                <a href="#" class="feature" id="featureAnalytics">View Analytics</a>
-                <a href="#" class="feature is-active" id="featureHabits">Introduce Habits</a>
-            </div>
-            <div class="flex jc-center">
-                <div class="feature-content text-center">
+            <div class="features-list flex jc-space-between " style="display:grid;grid-template-columns:1fr 1fr 1fr; ">
+                <div>
+                    <p class="feature is-active flex jc-space-between button button-primary" id="featureBudgets" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;">Manage Budgets</p>
                     <p class="" id="contentBudgets">Create budgets from any category with any amount of money. They're
                         updated automatically after each expense.</p>
+                </div>
+                <div>
+                    <p class="feature is-active flex jc-space-between button button-primary" id="featureExpenses" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;">Track Expenses</p>
                     <p id="contentSpending" class="">Add expenses and income at your leisure, into a category that fits
                         it best. Don't see a category that really matches? Make your own!</p>
-                    <p id="contentAnalytics" class="">Every month you can see detailed statistics about your spending,
+                </div>
+                <div>
+                    <p class="feature is-active flex jc-space-between button button-primary" id="featureCharts" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;">View Charts</p>
+                    <p id="contentAnalytics" class="is-active">Every month you can see detailed statistics about your spending,
                         broken down by amount per day, amount per category, and how much of each budget was spent.</p>
-                    <p id="contentHabits" class="is-active">By having to create your budgets and enter in every expense
-                        manually, you'll build better money-management habits and be more conscious of your
-                        spending.</p>
                 </div>
             </div>
         </div>
-        {{--<div class="pricing-bg">
-            <div class="background"></div>
-        </div>
-        <div class="pricing" id="pricing">
-            <div class="text-center">
-                <h2 class="heading-secondary is-white">What's it cost?</h2>
-            </div>
-            <div class="pricing-table flex jc-center">
-                <div class="price text-center">
-                    <h2 class="heading-price">Free</h2>
-                    <p>
-                        Unlimited Transactions<br>
-                        50 Custom Categories<br>
-                        Email Updates
-                    </p>
-                </div>
-                <div class="price text-center">
-                    <h2 class="heading-price">Coming Soon</h2>
-                    <p>
-                        Self-Hosted Installation<br>
-                        Multiple Accounts Support<br>
-                        And More!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="access" id="access">
-            <div class="text-center">
-                <h2 class="heading-secondary">Stay up to date</h2>
-            </div>
-            <div class="flex jc-center">
-                <div class="access-info text-center">
-                    <p>Want to know what's coming to the app before anyone else? Subscribe to our newsletter below and
-                        you'll recieve exclusive email updates once or twice a month.</p>
-                    <form class="form" id="subscribeForm" action="" method="GET">
-                        <label for="EMAIL" style="display:none;">Email Address</label>
-                        <input type="email" placeholder="email@domain.com" required="" value="" name="EMAIL"
-                               id="subscribeEmail">
-                        <div style="position:absolute;left:-5000px;" aria-hidden="true">
-                            <input type="text" name="b_b04a26f9d197241d64b939b91_67e6daf1ea" tabindex="-1" value="">
-                        </div>
-                        <a href="#" class="button button-primary" id="subscribeButton">Let's Go</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="divider">
-            <div class="gradient"></div>
-        </div>--}}
         <footer class="footer-main">
             <div class="copyright text-center">
-                <p class="tagline"><span>©{{date('Y')}} {{app()->environment('APP_NAME')}}</span> - Keep track of your
-                    finances and build better
-                    spending habits</p>
+                <p class="tagline"><span>©{{date('Y')}} ExpenseTracker</span> - Better Managing Your Finances</p>
             </div>
         </footer>
     </main>

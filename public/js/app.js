@@ -79078,7 +79078,7 @@ var render = function() {
                               }
                             }
                           },
-                          [_c("i", { staticClass: "fa fa-pencil" })]
+                          [_c("i", { staticClass: "fas fa-edit" })]
                         ),
                         _vm._v(" "),
                         _c(

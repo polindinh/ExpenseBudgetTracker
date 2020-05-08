@@ -52,7 +52,7 @@
                         </td>
                         <td class="action-links fs-3 ta-right">
                             <a href="#" @click="edit_transaction(transaction)" class="inline-block mr-4">
-                                <i class="fa fa-pencil"></i>
+                                <i class="fas fa-edit"></i>
                             </a>
                             <a href="#" @click="delete_transaction(transaction)" class="inline-block mr-4 color-danger">
                                 <i class="fa fa-trash"></i>
