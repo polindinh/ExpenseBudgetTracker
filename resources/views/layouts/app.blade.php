@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Money, Expense, Tracker, Spending, Chart, Controlling">
+    <meta name="author" content="Paul Dinh">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Budget</title>
+    <title>Expense Tracker</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>

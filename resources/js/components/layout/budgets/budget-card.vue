@@ -3,7 +3,7 @@
         <div class="budget budget-list-budget has-margin-bottom-md">
             <div class="row">
                 <div class="col-xs-6">
-                    <h3 class="budget-title">{{budget.category.name}}</h3>
+                    <h3 class="budget-title">{{budget.category.name| upText}}</h3>
                 </div>
                 <div class="col-xs-6">
                     <p class="amount ta-right">{{currencyDisplay.symbol}}{{spendTotal.toFixed(2)}}

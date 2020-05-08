@@ -38,7 +38,7 @@
                         <input required  v-if="sel_budget.newCat" v-model="sel_budget.category" type="text" class="v-money input">
                         <select  v-if="!sel_budget.newCat" v-model="sel_budget.category" name="category" required id="category" autocomplete="off" class="input">
                             <option value="">Select A Category</option>
-                            <option v-for="category in getCategories" :key="category.id" :value="category.id">{{category.name}}</option>
+                            <option v-for="category in getCategories" :key="category.id" :value="category.id">{{category.name| upText}}</option>
                         </select>
                     </div>
                 </div>

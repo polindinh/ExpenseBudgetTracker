@@ -1993,8 +1993,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       mobile: false,
-      appName: "Budget",
-      suffix: "bd"
+      appName: "Expense",
+      suffix: "Tracker"
     };
   },
   mounted: function mounted() {
@@ -77684,7 +77684,7 @@ var render = function() {
       _c("div", { staticClass: "row mb-3" }, [
         _c("div", { staticClass: "col-xs-12 col-sm-4" }, [
           _c("h3", { staticClass: "budget-title mb-1" }, [
-            _vm._v(_vm._s(_vm.budget.category.name))
+            _vm._v(_vm._s(_vm._f("upText")(_vm.budget.category.name)))
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "amount" }, [
@@ -77740,7 +77740,7 @@ var render = function() {
                   _c("span", [_vm._v(" — ")]),
                   _vm._v(" "),
                   _c("span", { staticClass: "fw-semibold" }, [
-                    _vm._v(_vm._s(transaction.title))
+                    _vm._v(_vm._s(_vm._f("upText")(transaction.title)))
                   ])
                 ]),
                 _vm._v(" "),
@@ -77799,7 +77799,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-xs-6" }, [
             _c("h3", { staticClass: "budget-title" }, [
-              _vm._v(_vm._s(_vm.budget.category.name))
+              _vm._v(_vm._s(_vm._f("upText")(_vm.budget.category.name)))
             ])
           ]),
           _vm._v(" "),
@@ -78642,7 +78642,11 @@ var render = function() {
                                     key: category.id,
                                     domProps: { value: category.id }
                                   },
-                                  [_vm._v(_vm._s(category.name))]
+                                  [
+                                    _vm._v(
+                                      _vm._s(_vm._f("upText")(category.name))
+                                    )
+                                  ]
                                 )
                               })
                             ],
@@ -79030,7 +79034,7 @@ var render = function() {
                       _c("td", [
                         _vm._v(
                           "\n                        " +
-                            _vm._s(transaction.title) +
+                            _vm._s(_vm._f("upText")(transaction.title)) +
                             "\n                    "
                         )
                       ]),
@@ -79038,7 +79042,9 @@ var render = function() {
                       _c("td", [
                         _vm._v(
                           "\n                        " +
-                            _vm._s(transaction.category.name) +
+                            _vm._s(
+                              _vm._f("upText")(transaction.category.name)
+                            ) +
                             "\n                    "
                         )
                       ]),
@@ -79256,7 +79262,11 @@ var render = function() {
                                     key: category.id,
                                     domProps: { value: category.id }
                                   },
-                                  [_vm._v(_vm._s(category.name))]
+                                  [
+                                    _vm._v(
+                                      _vm._s(_vm._f("upText")(category.name))
+                                    )
+                                  ]
                                 )
                               })
                             ],

@@ -36,10 +36,10 @@
                             {{new Date(transaction.date).toUTCString().split(' ').slice(1,3).join(' ')}}
                         </td>
                         <td>
-                            {{transaction.title}}
+                            {{transaction.title| upText}}
                         </td>
                         <td>
-                            {{transaction.category.name}}
+                            {{transaction.category.name| upText}}
                         </td>
                         <td class="ta-right">
                                 <span v-if="transaction.type=='expense'" class="color-danger is-size-7">
@@ -79,7 +79,7 @@
                     <div class="control">
                         <select v-if="!NewTransaction" required v-model="transaction.category" name="category"  id="category" autocomplete="off" class="input">
                             <option value="">Select A Category</option>
-                            <option v-for="category in getCategories" :key="category.id" :value="category.id">{{category.name}}</option>
+                            <option v-for="category in getCategories" :key="category.id" :value="category.id">{{category.name| upText}}</option>
                         </select>
                         <input v-if="NewTransaction" required v-model="transaction.category" type="text" placeholder="Category Name" name="category"  class="input">
                     </div>

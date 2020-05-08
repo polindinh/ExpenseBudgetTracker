@@ -1,7 +1,7 @@
 <template>
     <div class="budget has-margin-bottom-md">
             <div class="row mb-3">
-                <div class="col-xs-12 col-sm-4"><h3 class="budget-title mb-1">{{budget.category.name}}</h3>
+                <div class="col-xs-12 col-sm-4"><h3 class="budget-title mb-1">{{budget.category.name| upText}}</h3>
                     <p class="amount">
                         {{currencyDisplay.symbol}}{{spendTotal.toFixed(2)}} <span class="slash">/</span>
                         <span class="total">{{currencyDisplay.symbol}}{{budget.amount}}</span>
@@ -16,7 +16,7 @@
 
             <div v-for="transaction in budget.category.get_transactions" :key="transaction.id" v-if="thisMonth(transaction)" class="row row-dashboard-budget ptb-2">
                 <div class="col-xs-8">
-                    <span>{{new Date(transaction.date).toUTCString().split(' ').slice(1,3).join(' ')}}</span> <span>&nbsp;—&nbsp;</span> <span class="fw-semibold">{{transaction.title}}</span>
+                    <span>{{new Date(transaction.date).toUTCString().split(' ').slice(1,3).join(' ')}}</span> <span>&nbsp;—&nbsp;</span> <span class="fw-semibold">{{transaction.title| upText}}</span>
                 </div>
                 <div class="col-xs-4 ta-right">
                     <span v-if="transaction.type=='expense'" class="color-danger is-size-7">
