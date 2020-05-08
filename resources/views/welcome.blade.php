@@ -51,24 +51,33 @@
             <div class="text-center">
                 <h2 class="heading-secondary">What We Offer</h2>
             </div>
-            <div class="features-list flex jc-space-between " style="display:grid;grid-template-columns:1fr 1fr 1fr; justify-items:center;align-items: center;grid-column-gap:2rem; ">
-                <div style="justify-items:center;">
-                    <p class="feature is-active flex jc-space-between button button-primary" id="featureBudgets" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;align-items: center;">Manage Budgets</p>
-                    <br>
-                    <p id="contentBudgets" class="is-active description">Create budgets from any category with any amount of money. They're
+            <div class="" style="display:grid;grid-template-rows:1fr 1fr 1fr;grid-row-gap:2rem; ">
+                <div>
+                    <div>                    
+                        <p class=" button button-primary" id="">Budgets Managing</p>
+                    </div>
+                    <div>
+                        <p id="contentBudgets" class="is-active description">Create budgets from any category with any amount of money. They're
                         updated automatically after each expense.</p>
+                    </div>
                 </div>
                 <div>
-                    <p class="feature is-active flex jc-space-between button button-primary" id="featureExpenses" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;">Track Expenses</p>
-                    <br>
+                    <div>
+                        <p class="button button-primary" id="">Expenses Tracking</p>
+                    </div>
+                    <div>
                     <p id="contentSpending" class="description">Add expenses and income at your leisure, into a category that fits
                         it best. Don't see a category that really matches? Make your own!</p>
+                    </div>
                 </div>
                 <div>
-                    <p class="feature is-active flex jc-space-between button button-primary" id="featureCharts" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;">View Charts</p>
-                    <br>
-                    <p id="contentAnalytics" class="is-active description">Every month you can see detailed statistics about your spending,
+                    <div>
+                        <p class="button button-primary" id="">Detail Analytics</p>
+                    </div>
+                    <div>
+                        <p id="contentAnalytics" class="is-active description">Every month you can see detailed statistics about your spending,
                         broken down by amount per day, amount per category, and how much of each budget was spent.</p>
+                    </div>
                 </div>
             </div>
         </div>
