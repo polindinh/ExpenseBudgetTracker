@@ -8,15 +8,9 @@
             </div>
         </div>
         <div class="page-header is-hidden-tablet"><h1 class="fw-semibold">Transactions</h1>
-            <div class="mt-2 flex ai-center jc-space-between"><a href="#" class="button-primary color-white">New
-                Transaction</a>
-                <div class="dropdown pos-relative">
-                    <div class="dropdown-trigger">
-                        <button aria-haspopup="true" aria-controls="dropdown-menu" class="button-dropdown"><span>April 2020</span>
-                            <span class="icon is-small"><i aria-hidden="true" class="fa fa-angle-down"></i></span>
-                        </button>
-                    </div>
-                </div>
+            <div class="mt-2 flex ai-center jc-space-between">
+                <filterData @filterAction="filterres"></filterData>
+                <a href="#" @click="TransactionModal=true" class="button-primary color-white">New Transaction</a>
             </div>
         </div>
         <div class="page-block has-margin-top-md has-transactions-table">
@@ -55,7 +49,7 @@
                                 <i class="fas fa-edit"></i>
                             </a>
                             <a href="#" @click="delete_transaction(transaction)" class="inline-block mr-4 color-danger">
-                                <i class="fa fa-trash"></i>
+                                <i class="fas fa-trash"></i>
                             </a>
                         </td>
                     </tr>
@@ -226,9 +220,23 @@
                     }});
             },
             edit_transaction(transaction){
+                this.transaction ={
+                    id:null,
+                    title:"",
+                    category:null,
+                    amount:0.00,
+                    type:null,
+                    date:null
+                };
                 this.TransactionModal=true;
-                this.transaction = transaction;
-                this.transaction.category = transaction.category.id;
+
+
+                this.transaction.id=transaction.id;
+                this.transaction.title=transaction.title;
+                this.transaction.category=transaction.category.id;
+                this.transaction.amount=transaction.amount.replace(/,/g, '');
+                this.transaction.type=transaction.type;
+                this.transaction.date=transaction.date;
             }
         }
     }

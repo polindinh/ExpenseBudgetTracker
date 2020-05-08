@@ -3173,12 +3173,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 
@@ -3255,9 +3249,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
     },
     edit_transaction: function edit_transaction(transaction) {
+      this.transaction = {
+        id: null,
+        title: "",
+        category: null,
+        amount: 0.00,
+        type: null,
+        date: null
+      };
       this.TransactionModal = true;
-      this.transaction = transaction;
+      this.transaction.id = transaction.id;
+      this.transaction.title = transaction.title;
       this.transaction.category = transaction.category.id;
+      this.transaction.amount = transaction.amount.replace(/,/g, '');
+      this.transaction.type = transaction.type;
+      this.transaction.date = transaction.date;
     }
   }
 });
@@ -78997,7 +79003,32 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "page-header is-hidden-tablet" }, [
+        _c("h1", { staticClass: "fw-semibold" }, [_vm._v("Transactions")]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "mt-2 flex ai-center jc-space-between" },
+          [
+            _c("filterData", { on: { filterAction: _vm.filterres } }),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "button-primary color-white",
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    _vm.TransactionModal = true
+                  }
+                }
+              },
+              [_vm._v("New Transaction")]
+            )
+          ],
+          1
+        )
+      ]),
       _vm._v(" "),
       _c(
         "div",
@@ -79007,7 +79038,7 @@ var render = function() {
             "table",
             { staticClass: "table w-100 mb-0" },
             [
-              _vm._m(1),
+              _vm._m(0),
               _vm._v(" "),
               _c(
                 "transition-group",
@@ -79098,7 +79129,7 @@ var render = function() {
                               }
                             }
                           },
-                          [_c("i", { staticClass: "fa fa-trash" })]
+                          [_c("i", { staticClass: "fas fa-trash" })]
                         )
                       ])
                     ]
@@ -79477,47 +79508,6 @@ var render = function() {
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "page-header is-hidden-tablet" }, [
-      _c("h1", { staticClass: "fw-semibold" }, [_vm._v("Transactions")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mt-2 flex ai-center jc-space-between" }, [
-        _c(
-          "a",
-          { staticClass: "button-primary color-white", attrs: { href: "#" } },
-          [_vm._v("New\n            Transaction")]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "dropdown pos-relative" }, [
-          _c("div", { staticClass: "dropdown-trigger" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button-dropdown",
-                attrs: {
-                  "aria-haspopup": "true",
-                  "aria-controls": "dropdown-menu"
-                }
-              },
-              [
-                _c("span", [_vm._v("April 2020")]),
-                _vm._v(" "),
-                _c("span", { staticClass: "icon is-small" }, [
-                  _c("i", {
-                    staticClass: "fa fa-angle-down",
-                    attrs: { "aria-hidden": "true" }
-                  })
-                ])
-              ]
-            )
-          ])
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

@@ -30,7 +30,7 @@ class TransactionController extends Controller
                             //->where('type','expense')
                             ->whereRaw('MONTH(`date`) = '.$month)
                             ->whereRaw('YEAR(`date`) = '.$year)
-                            ->select('date', DB::raw('sum(amount) as total'))
+                            ->select('date', DB::raw(' sum(cast(replace(amount, \',\', \'\') as decimal(18,2))) as total'))
 
                             ->groupBy('date')
                             ->get();

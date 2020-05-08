@@ -10687,7 +10687,9 @@ body {
 }
 
 .hero.is-login .logo {
-    background: #232d3b
+    background: #232d3b;
+    /* background: whitesmoke; */
+
 }
 
 .hero.is-login .title {
@@ -11419,7 +11421,7 @@ p.help.is-danger {
     font-family: Hind, sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color: #fff
+    color: #0000FF;
 }
 
 .brand-text .suffix {

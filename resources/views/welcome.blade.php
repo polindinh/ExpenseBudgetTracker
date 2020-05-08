@@ -61,6 +61,7 @@
                         updated automatically after each expense.</p>
                     </div>
                 </div>
+
                 <div>
                     <div>
                         <p class="button button-primary" id="">Expenses Tracking</p>
@@ -79,11 +80,15 @@
                         broken down by amount per day, amount per category, and how much of each budget was spent.</p>
                     </div>
                 </div>
+                <div></div>
             </div>
         </div>
+        <!-- <div class="dividerone">
+            <div class="gradient"></div>
+        </div> -->
         <footer class="footer-main">
             <div class="copyright text-center">
-                <p class="tagline"><span>©{{date('Y')}} ExpenseTracker</span> - Better Managing Your Finances</p>
+                <p class="tagline"><span>©{{date('Y')}} ExpenseTracker</span> - Better Finances</p>
             </div>
         </footer>
     </main>
