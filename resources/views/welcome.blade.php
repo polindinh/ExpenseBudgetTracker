@@ -33,10 +33,10 @@
         <div class="intro flex">
             <div class="flex flex-1 ai-center">
                 <div class="intro-text">
-                    <h1 class="heading-primary">Control your budgets and expenses.</h1>
-                    <p class="description">With a manual-only entry mode, create customizable budgets and build better
-                        money management habits.</p>
-                    <a href="/signup" class="button button-primary" style="padding: .75rem 0.75rem;">Sign Up For Free</a>
+                    <h1 class="heading-primary">Manage your budgets and expenses.</h1>
+                    <p class="description">Build better
+                        money management habits and create customizable budgets.</p>
+                    <a href="/signup" class="button button-primary" style="padding: .75rem 0.75rem;">It's Free ! Sign Up Now</a>
                 </div>
             </div>
             <div class="flex-2 text-right">
@@ -49,9 +49,9 @@
         </div>
         <div class="features" id="features">
             <div class="text-center">
-                <h2 class="heading-secondary">What can it do?</h2>
+                <h2 class="heading-secondary">What We Offer</h2>
             </div>
-            <div class="features-list flex jc-space-between " style="display:grid;grid-template-columns:1fr 1fr 1fr; ">
+            <!-- <div class="features-list flex jc-space-between " style="display:grid;grid-template-columns:1fr 1fr 1fr; ">
                 <div>
                     <p class="feature is-active flex jc-space-between button button-primary" id="featureBudgets" style="color:whitesmoke;font-weight: 900;padding: .1rem 0.75rem;">Manage Budgets</p>
                     <p class="" id="contentBudgets">Create budgets from any category with any amount of money. They're
@@ -67,7 +67,7 @@
                     <p id="contentAnalytics" class="is-active">Every month you can see detailed statistics about your spending,
                         broken down by amount per day, amount per category, and how much of each budget was spent.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <footer class="footer-main">
             <div class="copyright text-center">
