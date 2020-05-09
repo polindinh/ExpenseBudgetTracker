@@ -9,6 +9,9 @@
     <meta name="author" content="Paul Dinh">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Expense Tracker</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{{asset('css/front.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>

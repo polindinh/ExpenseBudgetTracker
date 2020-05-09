@@ -10380,6 +10380,7 @@ body {
 .hero.is-login .is-login-links a:hover {
     /* color: #232d3b !important */
     color: inherit;
+    /* text-decoration: none !important; */
 
 }
 
@@ -10463,7 +10464,9 @@ a {
 }
 
 .menu-list a:hover {
-    background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, .5);
+    color:whitesmoke;
+    text-decoration:none;
 }
 
 .menu-list a:active {
@@ -11067,8 +11070,12 @@ p.help.is-danger {
     font-family: Hind, sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color: #0000FF;
+    color: #2962FF;
 }
+a:hover {
+    color: #1d68a7;
+    text-decoration: none;
+  }
 
 .brand-text .suffix {
     display: inline-block;
@@ -11246,6 +11253,13 @@ p.help.is-danger {
         transform: scale(1)
     }
 }
+.brand-text{
+    font-family: Hind, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color:#2962FF;
+}
+
 @charset "UTF-8";
 
 /*!
@@ -11424,8 +11438,8 @@ a {
 }
 
 a:hover {
-  /* color: #1d68a7; */
-  text-decoration: none;
+  color: #1d68a7;
+  text-decoration: underline;
 }
 
 a:not([href]) {

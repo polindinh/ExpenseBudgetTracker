@@ -2305,7 +2305,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "menus"
 });
@@ -77606,8 +77605,7 @@ var render = function() {
         _c(
           "div",
           {
-            staticClass:
-              "logo ta-left ptb-4 plr-4 flex ai-center jc-space-between"
+            staticClass: "logo ta-left  plr-4 flex ai-center jc-space-between"
           },
           [
             _vm._m(1),
@@ -77645,7 +77643,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo ta-center ptb-4" }, [
+    return _c("div", { staticClass: "logo ta-center" }, [
       _c("a", { staticClass: "brand-text", attrs: { href: "/" } }, [
         _vm._v("Expense"),
         _c("span", { staticClass: "suffix" }, [_vm._v("Tracker")])
@@ -77992,7 +77990,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("ul", { staticClass: "menu-list p-0 m-0 ls-none" }, [
+  return _c("ul", { staticClass: "menu-list p-0 mt-2 ls-none" }, [
     _c("li", { staticClass: "menu-title" }, [_vm._v("Manage")]),
     _vm._v(" "),
     _c(
@@ -78019,7 +78017,7 @@ var render = function() {
             staticClass: "fas fa-money-check-alt fa-lg",
             staticStyle: { color: "#85BB65" }
           }),
-          _vm._v("Transaction")
+          _vm._v("Transactions")
         ])
       ],
       1
@@ -95809,7 +95807,15 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   },
   router: _router__WEBPACK_IMPORTED_MODULE_2__["default"],
   store: _store__WEBPACK_IMPORTED_MODULE_3__["default"]
-});
+}); // // init controller
+// var controller = new ScrollMagic.Controller();
+// // create a scene
+// new ScrollMagic.Scene({
+//     duration: 100, // the scene should last for a scroll distance of 100px
+//     offset: 50 // start this scene after scrolling for 50px
+// })
+//     .setPin('#my-sticky-element') // pins the element for the the scene's duration
+//     .addTo(controller); // assign the scene to the controller
 
 /***/ }),
 

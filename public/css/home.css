@@ -1,0 +1,87 @@
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (min-width: 320px){
+    .brand-text{
+        font-family: Hind, sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        color:#2962FF;
+    }
+    
+    .brand-text .suffix {
+        display: inline-block;
+        /* background: #2962ff; */
+        background:red;
+        color: #fff;
+        font-size: .92rem;
+        text-transform: uppercase;
+        border-radius: 3px;
+        font-weight: 400;
+        padding: 4px 6px 4px 6px;
+        margin-left: 4px;
+        position: relative;
+        top: -2px
+    }
+    a:hover{
+        text-decoration: none !important;
+    }
+    .point {
+        display: none;
+    }
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (min-width: 768px){
+    .featurePoints{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .point-one, .point-two, .point-three {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .point {
+        display:block;
+    }
+    .show {
+        display: none;
+    }
+    .show-big{
+        display: block;
+    }
+    .picture-one {
+        width: 300px;
+    }
+    
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (min-width: 1024px){
+
+    .picture-one {
+        width: 430px;
+    }
+    .header-point{
+        margin-top:1rem;
+    }
+    
+
+}
+@media only screen and (min-width: 1300px){
+
+    .picture-one {
+        width: 580px;
+    }
+    .header-point{
+        margin-top:2rem;
+    }
+    
+
+}
