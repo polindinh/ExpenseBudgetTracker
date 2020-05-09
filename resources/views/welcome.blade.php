@@ -18,7 +18,7 @@
     <header class="header-main flex ai-center">
         <nav class="nav-main">
             <div class="flex ai-center">
-                <div class="logo ta-center ptb-4" ><a href="/" class="brand-text" style="color:blue;">Expense<p class="suffix" style="display:inline;">Tracker</p></a>
+                <div class="logo ta-center ptb-4" style="background:transparent;"><a href="/" class="brand-text">Expense<p class="suffix" style="display:inline;">Tracker</p></a>
                 </div>
             </div>
         </nav>

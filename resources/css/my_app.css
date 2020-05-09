@@ -1089,7 +1089,7 @@ a {
 }
 
 a.hover--td-underline:hover, a.td-underline {
-    text-decoration: underline
+    text-decoration: none
 }
 
 .ta-right {
@@ -7642,7 +7642,9 @@ a.hover--td-underline:hover, a.td-underline {
 }
 
 .fa-close:before, .fa-remove:before, .fa-times:before {
-    content: "\F00D"
+    content: "\F00D";
+    color:#2962FF;
+
 }
 
 .fa-search-plus:before {
@@ -8298,7 +8300,8 @@ a.hover--td-underline:hover, a.td-underline {
 }
 
 .fa-bars:before, .fa-navicon:before, .fa-reorder:before {
-    content: "\F0C9"
+    content: "\F0C9";
+    color:#2962FF;
 }
 
 .fa-list-ul:before {
@@ -10687,8 +10690,8 @@ body {
 }
 
 .hero.is-login .logo {
-    background: #232d3b;
-    /* background: whitesmoke; */
+    /* background: #232d3b; */
+    background: #F8FAFC;
 
 }
 
@@ -10702,7 +10705,9 @@ body {
 }
 
 .hero.is-login .is-login-links a:hover {
-    color: #232d3b !important
+    /* color: #232d3b !important */
+    color: inherit;
+
 }
 
 .hero.is-login .is-login-links span {
@@ -11414,7 +11419,9 @@ p.help.is-danger {
 
 
 .logo {
-    border-bottom: 1px solid hsla(0, 0%, 100%, .1)
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    background: #fff;
+    margin-bottom: 1rem;
 }
 
 .brand-text {
