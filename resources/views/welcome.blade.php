@@ -42,8 +42,8 @@
         </div>
     </header>
     <main class="main">
-        <div class="intro flex">
-            <div class="flex flex-1 ai-center">
+        <div class="intro flex" id="trigger2">
+            <div class="flex flex-1 ai-center" id="reveal2">
                 <div class="intro-text">
                     <h1 class="heading-primary">Manage your budgets and expenses.</h1>
                     <p class="description">
@@ -52,23 +52,23 @@
                         <a href="/signup" class="button button-primary">It's Free ! Sign Up Now</a>
                 </div>
             </div>
-            <div class="flex-2 text-right">
-                <img src="{{asset('imgs/budget.jpg')}}" width="710"
+            <div class="flex-2 text-right" >
+                <img id="reveal2" src="{{asset('imgs/budget.jpg')}}" width="710"
                      title="Map see on board">
             </div>
         </div>
         <div class="divider">
-            <div class="gradient"></div>
+            <div class="gradient" ></div>
         </div>
         <div class="features" id="features">
-            <div class="text-center mt-4">
-                <h2 class="heading-primary header-point">What We Offer</h2>
+            <div class="text-center mt-4" >
+                <h2 class="heading-primary header-point" >What We Offer</h2>
             </div>
-            <div class="featurePoints">
-                <div class="point-one" >
-                    <div class="text-center"> 
-                        <img class="point picture-one" src="{{asset('imgs/ma_web.svg')}}" alt="Image">                  
+            <div class="featurePoints" >
+                <div class="point-one" id="reveal3" id="trigger3">
+                    <div class="text-center" > 
                         <p class="button button-primary" id="">Budgets Managing</p>
+                        <img class="point picture-one" src="{{asset('imgs/ma_web.svg')}}" alt="Image">                  
                     </div>
                     <div>
                         <h3 class="heading-primary">Create budgets from any category with any amount of money. They're
@@ -81,15 +81,14 @@
                               Once you have that, the budget you eventually create will be much more useful and accurate.</p>
                     </div>
                     <div class="text-center hidden-mobile"> 
-                        <img class="point" src="{{asset('imgs/ma_web.svg')}}" alt="Image">                  
                         <p class="button button-primary" id="">Budgets Managing</p>
+                        <img class="point" src="{{asset('imgs/ma_web.svg')}}" alt="Image">                  
                     </div>
-                </div>
-
-                <div class="point-two">
+                </div >
+                <div class="point-two" id="reveal1" id="trigger1">
                     <div class="text-center show">
+                        <p class="button button-primary" >Expenses Tracking</p>
                         <img class="point" src="{{asset('imgs/tracking.jpg')}}" alt="Image">                  
-                        <p class="button button-primary" id="">Expenses Tracking</p>
                     </div>
                     <div>
                     <h3 class="heading-primary">Add expenses and income at your leisure, into a category that fits
@@ -101,14 +100,14 @@
                           remember that your financial goals may change over time, and that’s okay. So let’s say you meet your goal and pay off that credit card.</p>
                     </div>
                     <div class="text-center hidden-mobile show-big">
-                        <img class="point" src="{{asset('imgs/tracking.jpg')}}" alt="Image">                  
                         <p class="button button-primary" id="">Expenses Tracking</p>
+                        <img class="point" src="{{asset('imgs/tracking.jpg')}}" alt="Image">                  
                     </div>
                 </div>
-                <div class="point-three">
+                <div class="point-three" id="reveal4" id="trigger4">
                     <div class="text-center">
-                        <img class="point" src="{{asset('imgs/Analytics.jpg')}}" alt="Image">
                         <p class="button button-primary" id="">Detail Analytics</p>
+                        <img class="point" src="{{asset('imgs/Analytics.jpg')}}" alt="Image">
                     </div>
                     <div>
                     <h3 class="heading-primary">If you’ve ever wondered where your money goes, our free monthly 
@@ -121,11 +120,10 @@
                             or under budget. This personal expense tracker can really pay off, so download it today. It’s free!</p>
                     </div>
                     <div class="text-center hidden-mobile">
+                        <p class=" button-primary" id="">Detail Analytics</p>
                         <img src="{{asset('imgs/Analytics.jpg')}}" alt="Image">
-                        <p class="button button-primary" id="">Detail Analytics</p>
                     </div>
                 </div>
-                <div></div>
             </div>
         </div>
         <!-- <div class="dividerone">
@@ -138,5 +136,8 @@
         </footer>
     </main>
 </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="{{ asset('js/myjs.js') }}"></script>
 </body>
 </html>
