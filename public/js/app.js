@@ -78544,7 +78544,7 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("cancel")]
+                            [_vm._v("Cancel")]
                           )
                         : _vm._e(),
                       _vm._v(" "),
@@ -78560,7 +78560,7 @@ var render = function() {
                                 }
                               }
                             },
-                            [_vm._v("new")]
+                            [_vm._v("New")]
                           )
                         : _vm._e()
                     ]),
@@ -79492,7 +79492,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "ta-right" }, [
                     _c("input", {
-                      staticClass: "button-secondary mr-2",
+                      staticClass: "button-primary color-white",
                       attrs: { type: "submit", value: "Save + Close" }
                     })
                   ])

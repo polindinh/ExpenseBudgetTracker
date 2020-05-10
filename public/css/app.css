@@ -6841,7 +6841,7 @@ a.hover--td-underline:hover, a.td-underline {
 }
 
 .bg-color-white, .hover--bg-color-white:hover {
-    background-color: #fff
+    background-color: #fff;
 }
 
 .bg-very-clear-black, .hover--bg-very-clear-black:hover {
@@ -11072,10 +11072,10 @@ p.help.is-danger {
     font-size: 24px;
     color: #2962FF;
 }
-a:hover {
+/* a:hover {
     color: #1d68a7;
-    text-decoration: none;
-  }
+    text-decoration: underline;
+  } */
 
 .brand-text .suffix {
     display: inline-block;
@@ -28184,5 +28184,14 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.brand-text:hover {
+  color: #2962FF;
 }
 

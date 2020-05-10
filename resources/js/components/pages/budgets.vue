@@ -31,8 +31,8 @@
             <form @submit.prevent="store_budget" method="post">
                 <div class="field">
                     <label  class="label">Category
-                        <a v-if="sel_budget.newCat" style="color:blue" @click="sel_budget.newCat=false" class="is-size-7">cancel</a>
-                        <a v-if="!sel_budget.newCat" style="color:blue" @click="sel_budget.newCat=true"  class="is-size-7">new</a>
+                        <a v-if="sel_budget.newCat" style="color:blue" @click="sel_budget.newCat=false" class="is-size-7">Cancel</a>
+                        <a v-if="!sel_budget.newCat" style="color:blue" @click="sel_budget.newCat=true"  class="is-size-7">New</a>
                     </label>
                     <div class="control">
                         <input required  v-if="sel_budget.newCat" v-model="sel_budget.category" type="text" class="v-money input">

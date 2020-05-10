@@ -38,8 +38,6 @@
                     @endauth
                 </div>
             @endif
-                <!-- <a href="/login" class="link">Sign In</a>
-                <a href="/signup" class="button">Register</a> -->
             </div>
         </div>
     </header>
@@ -83,14 +81,14 @@
                               Once you have that, the budget you eventually create will be much more useful and accurate.</p>
                     </div>
                     <div class="text-center hidden-mobile"> 
-                        <img class="point" src="{{asset('imgs/budget.jpg')}}" alt="Image">                  
+                        <img class="point" src="{{asset('imgs/ma_web.svg')}}" alt="Image">                  
                         <p class="button button-primary" id="">Budgets Managing</p>
                     </div>
                 </div>
 
                 <div class="point-two">
                     <div class="text-center show">
-                        <img class="point" src="{{asset('imgs/ma_web.svg')}}" alt="Image">                  
+                        <img class="point" src="{{asset('imgs/tracking.jpg')}}" alt="Image">                  
                         <p class="button button-primary" id="">Expenses Tracking</p>
                     </div>
                     <div>
@@ -103,7 +101,7 @@
                           remember that your financial goals may change over time, and that’s okay. So let’s say you meet your goal and pay off that credit card.</p>
                     </div>
                     <div class="text-center hidden-mobile show-big">
-                        <img class="point" src="{{asset('imgs/budget.jpg')}}" alt="Image">                  
+                        <img class="point" src="{{asset('imgs/tracking.jpg')}}" alt="Image">                  
                         <p class="button button-primary" id="">Expenses Tracking</p>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
                     <div class="logo ta-center ptb-4">
                         <a class="brand-text" href="/">{{env('MIX_APP_NAME')}}<span class="suffix">{{env('MIX_APP_SUFFIX')}}</span></a>
                     </div>
-                    <h3 class="mt-5 fs-3 ta-center fw-semibold">Sign in with your email and password.</h3>
+                    <h3 class="mt-5 fs-3 ta-center fw-semibold">Sign up, it takes just a few minutes!</h3>
                     <div class="info-box has-padding-top-lg has-padding-bottom-lg has-margin-top-md has-margin-bottom-md">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf

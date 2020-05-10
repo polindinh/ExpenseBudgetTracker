@@ -10,7 +10,7 @@
         <div class="page-header is-hidden-tablet"><h1 class="fw-semibold">Transactions</h1>
             <div class="mt-2 flex ai-center jc-space-between">
                 <filterData @filterAction="filterres"></filterData>
-                <a href="#" @click="TransactionModal=true" class="button-primary color-white">New Transaction</a>
+                <a href="#" @click="TransactionModal=true" class="button-primary color-white"  >New Transaction</a>
             </div>
         </div>
         <div class="page-block has-margin-top-md has-transactions-table">
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="ta-right">
-                    <input type="submit" class="button-secondary mr-2" value="Save + Close">
+                    <input type="submit" class="button-primary color-white" value="Save + Close">
                 </div>
             </form>
         </modal>
