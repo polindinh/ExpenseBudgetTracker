@@ -13,9 +13,9 @@ var sceneOne = new ScrollMagic.Scene({
 
 var sceneTwo = new ScrollMagic.Scene({
     triggerElement: "#trigger1",
-    triggerHook: 0.8, // show, when scrolled 10% into view
+    triggerHook: 1, // show, when scrolled 10% into view
     duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-    offset: 700 // move trigger to center of element
+    offset: 800 // move trigger to center of element
 })
 .setClassToggle("#reveal1", "visible") // add class to reveal
 // .addIndicators() // add indicators (requires plugin)
@@ -23,9 +23,9 @@ var sceneTwo = new ScrollMagic.Scene({
 
 var sceneTwo = new ScrollMagic.Scene({
     triggerElement: "#trigger3",
-    triggerHook: 0.2, // show, when scrolled 10% into view
+    triggerHook: 0.6, // show, when scrolled 10% into view
     duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-    offset: 0 // move trigger to center of element
+    offset: 180 // move trigger to center of element
 })
 .setClassToggle("#reveal3", "visible") // add class to reveal
 // .addIndicators() // add indicators (requires plugin)
@@ -33,9 +33,9 @@ var sceneTwo = new ScrollMagic.Scene({
 
 var sceneTwo = new ScrollMagic.Scene({
     triggerElement: "#trigger4",
-    triggerHook: .5, // show, when scrolled 10% into view
+    triggerHook: 0.9, // show, when scrolled 10% into view
     duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-    offset: 1200 // move trigger to center of element
+    offset: 1600 // move trigger to center of element
 })
 .setClassToggle("#reveal4", "visible") // add class to reveal
 // .addIndicators() // add indicators (requires plugin)
